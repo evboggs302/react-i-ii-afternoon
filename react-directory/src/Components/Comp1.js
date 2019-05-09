@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import "./App.css";
+import "./Comp1.css";
 
 export default class Comp1 extends Component {
   constructor(props) {
@@ -9,21 +9,31 @@ export default class Comp1 extends Component {
   render() {
     console.log(this.props);
     return (
-      <div>
-        <h1>{this.props.info.id}/ 25</h1>
-        <div>
-          {this.props.info.name.first} {this.props.info.name.last}
+      <div className="main">
+        <div className="infoContainer">
+          <h1 className="currentIndex">{this.props.info.id}/ 25</h1>
+          <div className="fullName">
+            {this.props.info.name.first} {this.props.info.name.last}
+          </div>
+          <br />
+          <br />
+          <div className="line1">
+            <div className="from">From:</div>
+            <div>
+              {this.props.info.city}, {this.props.info.country}
+            </div>
+          </div>
+          <br />
+          <div className="line2">
+            <div className="job">Job Title: </div>
+            <div>{this.props.info.title}</div>
+          </div>
+
+          {/* <div className="job">Job: {this.props.info.title}</div> */}
+          {/* <div className="employer">Employer: {this.props.info.employer}</div> */}
         </div>
         <br />
-        <section>
-          <div>
-            From: {this.props.info.city}, {this.props.info.country}
-          </div>
-          <div>Job: {this.props.info.title}</div>
-          <div>Employer: {this.props.info.employer}</div>
-        </section>
-        <br />
-        <div>
+        {/* <div className="movies">
           {" "}
           Favorite Movies
           <ol>
@@ -31,7 +41,7 @@ export default class Comp1 extends Component {
             <li>{this.props.info.favoriteMovies[1]}</li>
             <li>{this.props.info.favoriteMovies[2]}</li>
           </ol>
-        </div>
+        </div> */}
       </div>
     );
   }

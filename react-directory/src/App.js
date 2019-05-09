@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Comp1 from "./Components/Comp1";
 import Comp2 from "./Components/Comp2";
 import data from "./data";
-// import "./App.css";
+import "./App.css";
 
 export default class App extends Component {
   constructor(props) {
@@ -31,8 +31,10 @@ export default class App extends Component {
     return (
       <div>
         <header>Home</header>
-        <Comp1 info={this.state.data[this.state.index]} />
-        <Comp2 next={this.nextContact} previ={this.prevContact} />
+        <body>
+          <Comp1 info={this.state.data[this.state.index]} />
+          <Comp2 next={this.nextContact} previ={this.prevContact} />
+        </body>
       </div>
     );
   }

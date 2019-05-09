@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import "./App.css";
+import "./Comp2.css";
 
 export default class Comp2 extends Component {
   constructor(props) {
@@ -9,18 +9,20 @@ export default class Comp2 extends Component {
     return (
       <div>
         <button
+          className="previous"
           onClick={() => {
             this.props.previ();
           }}
         >
           Previous
         </button>
-        <section>
+        <section className="mids">
           <button>Edit</button>
           <button>Delete</button>
           <button>New</button>
         </section>
         <button
+          className="next"
           onClick={() => {
             this.props.next();
           }}

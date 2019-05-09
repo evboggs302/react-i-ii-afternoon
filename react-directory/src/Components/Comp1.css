@@ -1,0 +1,82 @@
+.main {
+  display: flex;
+  margin: 10vh auto;
+  background-color: white;
+  height: 400px;
+  width: 800px;
+}
+
+.infoContainer {
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+}
+
+.currentIndex {
+  display: flex;
+  justify-content: flex-end;
+  width: 98%;
+  margin: 0;
+  font-size: 25px;
+}
+
+.fullName {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 174, 255);
+}
+
+.line1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.from {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.line2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.job {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.line3 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.employer {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+/* .job {
+  display: flex;
+  justify-content: flex-start;
+  height: 5px;
+  background-color: green;
+} */
+/* .employer {
+  display: flex;
+  justify-content: flex-start;
+  height: 5px;
+  background-color: purple;
+} */
+/* .movies {
+  display: flex;
+  justify-content: flex-start;
+  height: 5px;
+  background-color: yellow;
+} */
