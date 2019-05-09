@@ -1,0 +1,70 @@
+.buttonsContainer {
+  width: 100vw;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.previous {
+  display: flex;
+  justify-content: flex-start;
+  width: 17.5%;
+  /* background-color: blueviolet; */
+}
+
+.pb {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: black;
+  border: none;
+}
+
+.mids {
+  display: flex;
+  justify-content: center;
+  /* background-color: blueviolet; */
+}
+
+.mb > :nth-child(1) {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(0, 174, 255);
+  border: none;
+}
+
+.mb > :nth-child(2) {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(0, 174, 255);
+  border: black;
+}
+
+.mb > :nth-child(3) {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(0, 174, 255);
+  border: none;
+}
+
+.next {
+  display: flex;
+  justify-content: flex-end;
+  width: 17.5%;
+  /* background-color: blueviolet; */
+}
+
+.nb {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: black;
+  border: none;
+}

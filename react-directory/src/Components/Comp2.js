@@ -7,28 +7,34 @@ export default class Comp2 extends Component {
   }
   render() {
     return (
-      <div>
-        <button
-          className="previous"
-          onClick={() => {
-            this.props.previ();
-          }}
-        >
-          Previous
-        </button>
-        <section className="mids">
-          <button>Edit</button>
-          <button>Delete</button>
-          <button>New</button>
-        </section>
-        <button
-          className="next"
-          onClick={() => {
-            this.props.next();
-          }}
-        >
-          Next
-        </button>
+      <div className="buttonsContainer" t>
+        <div className="previous">
+          <button
+            className="pb"
+            onClick={() => {
+              this.props.previ();
+            }}
+          >
+            {"<"} Previous
+          </button>
+        </div>
+        <div className="mids">
+          <div className="mb">
+            <button>Edit</button>
+            <button>Delete</button>
+            <button>New</button>
+          </div>
+        </div>
+        <div className="next">
+          <button
+            className="nb"
+            onClick={() => {
+              this.props.next();
+            }}
+          >
+            Next {">"}
+          </button>
+        </div>
       </div>
     );
   }

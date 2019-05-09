@@ -18,7 +18,7 @@ export default class Comp1 extends Component {
           <br />
           <br />
           <div className="line1">
-            <div className="from">From:</div>
+            <div className="from">From: </div>
             <div>
               {this.props.info.city}, {this.props.info.country}
             </div>
@@ -28,20 +28,21 @@ export default class Comp1 extends Component {
             <div className="job">Job Title: </div>
             <div>{this.props.info.title}</div>
           </div>
-
-          {/* <div className="job">Job: {this.props.info.title}</div> */}
-          {/* <div className="employer">Employer: {this.props.info.employer}</div> */}
-        </div>
-        <br />
-        {/* <div className="movies">
-          {" "}
-          Favorite Movies
+          <br />
+          <div className="line3">
+            <div className="employer">Employer: </div>
+            <div> {this.props.info.employer}</div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div className="movies"> Favorite Movies:</div>
           <ol>
             <li>{this.props.info.favoriteMovies[0]}</li>
             <li>{this.props.info.favoriteMovies[1]}</li>
             <li>{this.props.info.favoriteMovies[2]}</li>
           </ol>
-        </div> */}
+        </div>
       </div>
     );
   }
