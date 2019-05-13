@@ -16,15 +16,27 @@ export default class App extends Component {
   }
 
   nextContact() {
-    this.setState({
-      index: (this.state.index += 1)
-    });
+    if (this.state.index >= 24) {
+      this.setState({
+        index: 0
+      });
+    } else {
+      this.setState({
+        index: (this.state.index += 1)
+      });
+    }
   }
 
   prevContact() {
-    this.setState({
-      index: this.state.index - 1
-    });
+    if (this.state.index <= 0) {
+      this.setState({
+        index: 24
+      });
+    } else {
+      this.setState({
+        index: this.state.index - 1
+      });
+    }
   }
 
   render() {
